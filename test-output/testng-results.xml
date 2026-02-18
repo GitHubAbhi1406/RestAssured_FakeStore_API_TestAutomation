@@ -1,29 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-18T19:40:58 IST" name="Default suite" finished-at="2026-02-18T19:41:00 IST" duration-ms="2533">
+  <suite started-at="2026-02-18T21:06:21 IST" name="FakeStore Suite" finished-at="2026-02-18T21:06:27 IST" duration-ms="6255">
     <groups>
     </groups>
-    <test started-at="2026-02-18T19:40:58 IST" name="Default test" finished-at="2026-02-18T19:41:00 IST" duration-ms="2533">
-      <class name="com.FakeStore.API.GetRequestTests.getSingleCartTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.FakeStore.API.GetRequestTests.getSingleCartTest@4218d6a3]" started-at="2026-02-18T19:40:58 IST" name="setUp" finished-at="2026-02-18T19:40:58 IST" duration-ms="287" status="PASS">
+    <test started-at="2026-02-18T21:06:21 IST" name="API Tests" finished-at="2026-02-18T21:06:27 IST" duration-ms="6255">
+      <class name="com.FakeStore.API.POSTRequestTests.postCartInfoTest">
+        <test-method is-config="true" signature="getResponse()[pri:0, instance:com.FakeStore.API.POSTRequestTests.postCartInfoTest@461ad730]" started-at="2026-02-18T21:06:23 IST" name="getResponse" finished-at="2026-02-18T21:06:24 IST" duration-ms="532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResponse -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.FakeStore.API.POSTRequestTests.postCartInfoTest@461ad730]" started-at="2026-02-18T21:06:23 IST" name="setUp" finished-at="2026-02-18T21:06:23 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="getResponseforCart()[pri:0, instance:com.FakeStore.API.GetRequestTests.getSingleCartTest@4218d6a3]" started-at="2026-02-18T19:40:58 IST" name="getResponseforCart" finished-at="2026-02-18T19:41:00 IST" duration-ms="2157" status="PASS">
+        <test-method signature="logResponse()[pri:1, instance:com.FakeStore.API.POSTRequestTests.postCartInfoTest@461ad730]" started-at="2026-02-18T21:06:24 IST" name="logResponse" finished-at="2026-02-18T21:06:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getResponseforCart -->
-        <test-method signature="logResponseBody()[pri:1, instance:com.FakeStore.API.GetRequestTests.getSingleCartTest@4218d6a3]" started-at="2026-02-18T19:41:00 IST" name="logResponseBody" finished-at="2026-02-18T19:41:00 IST" duration-ms="51" status="PASS">
+        </test-method> <!-- logResponse -->
+        <test-method signature="assertResponseCode()[pri:2, instance:com.FakeStore.API.POSTRequestTests.postCartInfoTest@461ad730]" started-at="2026-02-18T21:06:24 IST" name="assertResponseCode" finished-at="2026-02-18T21:06:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertResponseCode -->
+      </class> <!-- com.FakeStore.API.POSTRequestTests.postCartInfoTest -->
+      <class name="com.FakeStore.API.GetRequestTests.getAllUsersTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.FakeStore.API.GetRequestTests.getAllUsersTest@24959ca4]" started-at="2026-02-18T21:06:25 IST" name="setUp" finished-at="2026-02-18T21:06:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="getUserResponse()[pri:0, instance:com.FakeStore.API.GetRequestTests.getAllUsersTest@24959ca4]" started-at="2026-02-18T21:06:25 IST" name="getUserResponse" finished-at="2026-02-18T21:06:25 IST" duration-ms="614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserResponse -->
+        <test-method signature="logResponse()[pri:1, instance:com.FakeStore.API.GetRequestTests.getAllUsersTest@24959ca4]" started-at="2026-02-18T21:06:25 IST" name="logResponse" finished-at="2026-02-18T21:06:25 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResponse -->
+        <test-method signature="assertResponseCode()[pri:2, instance:com.FakeStore.API.GetRequestTests.getAllUsersTest@24959ca4]" started-at="2026-02-18T21:06:25 IST" name="assertResponseCode" finished-at="2026-02-18T21:06:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertResponseCode -->
+        <test-method signature="assertHeaders()[pri:3, instance:com.FakeStore.API.GetRequestTests.getAllUsersTest@24959ca4]" started-at="2026-02-18T21:06:25 IST" name="assertHeaders" finished-at="2026-02-18T21:06:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertHeaders -->
+      </class> <!-- com.FakeStore.API.GetRequestTests.getAllUsersTest -->
+      <class name="com.FakeStore.API.GetRequestTests.getAllProductsTest">
+        <test-method is-config="true" signature="getProductsResponse()[pri:0, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@730d2164]" started-at="2026-02-18T21:06:24 IST" name="getProductsResponse" finished-at="2026-02-18T21:06:24 IST" duration-ms="482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductsResponse -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@730d2164]" started-at="2026-02-18T21:06:24 IST" name="setUp" finished-at="2026-02-18T21:06:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logResponseBody()[pri:1, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@730d2164]" started-at="2026-02-18T21:06:24 IST" name="logResponseBody" finished-at="2026-02-18T21:06:24 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResponseBody -->
-        <test-method signature="assertResponseCode()[pri:2, instance:com.FakeStore.API.GetRequestTests.getSingleCartTest@4218d6a3]" started-at="2026-02-18T19:41:00 IST" name="assertResponseCode" finished-at="2026-02-18T19:41:00 IST" duration-ms="2" status="PASS">
+        <test-method signature="verifyStatusCode()[pri:2, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@730d2164]" started-at="2026-02-18T21:06:24 IST" name="verifyStatusCode" finished-at="2026-02-18T21:06:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusCode -->
+        <test-method signature="extractResponseData()[pri:3, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@730d2164]" started-at="2026-02-18T21:06:24 IST" name="extractResponseData" finished-at="2026-02-18T21:06:24 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extractResponseData -->
+        <test-method signature="assertResponseTime()[pri:4, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@730d2164]" started-at="2026-02-18T21:06:24 IST" name="assertResponseTime" finished-at="2026-02-18T21:06:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertResponseTime -->
+      </class> <!-- com.FakeStore.API.GetRequestTests.getAllProductsTest -->
+      <class name="com.FakeStore.API.GetRequestTests.getProductsByIdTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.FakeStore.API.GetRequestTests.getProductsByIdTest@10289886]" started-at="2026-02-18T21:06:25 IST" name="setUp" finished-at="2026-02-18T21:06:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="getResponse()[pri:0, instance:com.FakeStore.API.GetRequestTests.getProductsByIdTest@10289886]" started-at="2026-02-18T21:06:25 IST" name="getResponse" finished-at="2026-02-18T21:06:26 IST" duration-ms="890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResponse -->
+        <test-method signature="logResponse()[pri:1, instance:com.FakeStore.API.GetRequestTests.getProductsByIdTest@10289886]" started-at="2026-02-18T21:06:26 IST" name="logResponse" finished-at="2026-02-18T21:06:26 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResponse -->
+        <test-method signature="assertResponseCode()[pri:2, instance:com.FakeStore.API.GetRequestTests.getProductsByIdTest@10289886]" started-at="2026-02-18T21:06:26 IST" name="assertResponseCode" finished-at="2026-02-18T21:06:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertResponseCode -->
+      </class> <!-- com.FakeStore.API.GetRequestTests.getProductsByIdTest -->
+      <class name="com.FakeStore.API.GetRequestTests.getSingleCartTest">
+        <test-method is-config="true" signature="getResponseforCart()[pri:0, instance:com.FakeStore.API.GetRequestTests.getSingleCartTest@5c86dbc5]" started-at="2026-02-18T21:06:26 IST" name="getResponseforCart" finished-at="2026-02-18T21:06:27 IST" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResponseforCart -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.FakeStore.API.GetRequestTests.getSingleCartTest@5c86dbc5]" started-at="2026-02-18T21:06:26 IST" name="setUp" finished-at="2026-02-18T21:06:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="logResponseBody()[pri:1, instance:com.FakeStore.API.GetRequestTests.getSingleCartTest@5c86dbc5]" started-at="2026-02-18T21:06:27 IST" name="logResponseBody" finished-at="2026-02-18T21:06:27 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResponseBody -->
+        <test-method signature="assertResponseCode()[pri:2, instance:com.FakeStore.API.GetRequestTests.getSingleCartTest@5c86dbc5]" started-at="2026-02-18T21:06:27 IST" name="assertResponseCode" finished-at="2026-02-18T21:06:27 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assertResponseCode -->
       </class> <!-- com.FakeStore.API.GetRequestTests.getSingleCartTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.FakeStore.API.GetRequestTests.getAllCartsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907]" started-at="2026-02-18T21:06:21 IST" name="setUp" finished-at="2026-02-18T21:06:21 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="getResponse()[pri:0, instance:com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907]" started-at="2026-02-18T21:06:21 IST" name="getResponse" finished-at="2026-02-18T21:06:23 IST" duration-ms="1694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResponse -->
+        <test-method signature="logResponse()[pri:1, instance:com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907]" started-at="2026-02-18T21:06:23 IST" name="logResponse" finished-at="2026-02-18T21:06:23 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResponse -->
+        <test-method signature="assertStatusCode()[pri:2, instance:com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907]" started-at="2026-02-18T21:06:23 IST" name="assertStatusCode" finished-at="2026-02-18T21:06:23 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertStatusCode -->
+        <test-method signature="validateResponseHeader()[pri:3, instance:com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907]" started-at="2026-02-18T21:06:23 IST" name="validateResponseHeader" finished-at="2026-02-18T21:06:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseHeader -->
+        <test-method signature="extractResponse()[pri:4, instance:com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907]" started-at="2026-02-18T21:06:23 IST" name="extractResponse" finished-at="2026-02-18T21:06:23 IST" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extractResponse -->
+        <test-method signature="validateResponseTime()[pri:5, instance:com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907]" started-at="2026-02-18T21:06:23 IST" name="validateResponseTime" finished-at="2026-02-18T21:06:23 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResponseTime -->
+        <test-method signature="validateCartCount()[pri:6, instance:com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907]" started-at="2026-02-18T21:06:23 IST" name="validateCartCount" finished-at="2026-02-18T21:06:23 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCartCount -->
+      </class> <!-- com.FakeStore.API.GetRequestTests.getAllCartsTest -->
+      <class name="com.FakeStore.API.POSTRequestTests.postProductTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.FakeStore.API.POSTRequestTests.postProductTest@4ee203eb]" started-at="2026-02-18T21:06:24 IST" name="setUp" finished-at="2026-02-18T21:06:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="postRequestFunction()[pri:0, instance:com.FakeStore.API.POSTRequestTests.postProductTest@4ee203eb]" started-at="2026-02-18T21:06:24 IST" name="postRequestFunction" finished-at="2026-02-18T21:06:25 IST" duration-ms="543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRequestFunction -->
+        <test-method signature="logResponseBody()[pri:1, instance:com.FakeStore.API.POSTRequestTests.postProductTest@4ee203eb]" started-at="2026-02-18T21:06:25 IST" name="logResponseBody" finished-at="2026-02-18T21:06:25 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResponseBody -->
+        <test-method signature="assertResponseCode()[pri:2, instance:com.FakeStore.API.POSTRequestTests.postProductTest@4ee203eb]" started-at="2026-02-18T21:06:25 IST" name="assertResponseCode" finished-at="2026-02-18T21:06:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertResponseCode -->
+      </class> <!-- com.FakeStore.API.POSTRequestTests.postProductTest -->
+    </test> <!-- API Tests -->
+  </suite> <!-- FakeStore Suite -->
 </testng-results>

@@ -1,0 +1,14 @@
+{
+	"id" : 0,
+	"userId" : 0,
+	"products" : [
+		{
+			"id" : 0,
+			"title" : "New cart",
+			"price" : 78,
+			"description" : "New cart description",
+			"category" : "Test category",
+			"image" : "https://www.google.com"
+		}
+	]
+}

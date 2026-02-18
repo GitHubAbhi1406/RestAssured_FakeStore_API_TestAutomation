@@ -44,6 +44,10 @@ public class getAllProductsTest extends BaseTest{
 		for(int i=0;i<products_title.size();i++) {
 			System.out.println(products_title.get(i));
 		}
-		
+	}
+	
+	@Test(priority = 4)
+	public void assertResponseTime() {
+		Assert.assertTrue(res.getTime() < 3000, "Response is not within accepted time limit");
 	}
 }

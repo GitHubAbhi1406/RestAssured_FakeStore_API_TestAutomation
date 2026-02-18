@@ -1,0 +1,185 @@
+<html>
+<head>
+<title>TestNG:  API Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>API Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 18 21:06:21 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>6 seconds (6255 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getAllProductsTest.verifyStatusCode()'><b>verifyStatusCode</b><br>Test class: com.FakeStore.API.GetRequestTests.getAllProductsTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getAllProductsTest@730d2164</td></tr>
+<tr>
+<td title='com.FakeStore.API.POSTRequestTests.postProductTest.assertResponseCode()'><b>assertResponseCode</b><br>Test class: com.FakeStore.API.POSTRequestTests.postProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.POSTRequestTests.postProductTest@4ee203eb</td></tr>
+<tr>
+<td title='com.FakeStore.API.POSTRequestTests.postCartInfoTest.assertResponseCode()'><b>assertResponseCode</b><br>Test class: com.FakeStore.API.POSTRequestTests.postCartInfoTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.POSTRequestTests.postCartInfoTest@461ad730</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getSingleCartTest.logResponseBody()'><b>logResponseBody</b><br>Test class: com.FakeStore.API.GetRequestTests.getSingleCartTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getSingleCartTest@5c86dbc5</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getAllCartsTest.extractResponse()'><b>extractResponse</b><br>Test class: com.FakeStore.API.GetRequestTests.getAllCartsTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getAllCartsTest.assertStatusCode()'><b>assertStatusCode</b><br>Test class: com.FakeStore.API.GetRequestTests.getAllCartsTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getAllCartsTest.validateResponseTime()'><b>validateResponseTime</b><br>Test class: com.FakeStore.API.GetRequestTests.getAllCartsTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907</td></tr>
+<tr>
+<td title='com.FakeStore.API.POSTRequestTests.postProductTest.logResponseBody()'><b>logResponseBody</b><br>Test class: com.FakeStore.API.POSTRequestTests.postProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.POSTRequestTests.postProductTest@4ee203eb</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getAllProductsTest.extractResponseData()'><b>extractResponseData</b><br>Test class: com.FakeStore.API.GetRequestTests.getAllProductsTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getAllProductsTest@730d2164</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getAllUsersTest.logResponse()'><b>logResponse</b><br>Test class: com.FakeStore.API.GetRequestTests.getAllUsersTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getAllUsersTest@24959ca4</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getAllUsersTest.assertResponseCode()'><b>assertResponseCode</b><br>Test class: com.FakeStore.API.GetRequestTests.getAllUsersTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getAllUsersTest@24959ca4</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getAllUsersTest.assertHeaders()'><b>assertHeaders</b><br>Test class: com.FakeStore.API.GetRequestTests.getAllUsersTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getAllUsersTest@24959ca4</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getProductsByIdTest.assertResponseCode()'><b>assertResponseCode</b><br>Test class: com.FakeStore.API.GetRequestTests.getProductsByIdTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getProductsByIdTest@10289886</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getSingleCartTest.assertResponseCode()'><b>assertResponseCode</b><br>Test class: com.FakeStore.API.GetRequestTests.getSingleCartTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getSingleCartTest@5c86dbc5</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getAllCartsTest.logResponse()'><b>logResponse</b><br>Test class: com.FakeStore.API.GetRequestTests.getAllCartsTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907</td></tr>
+<tr>
+<td title='com.FakeStore.API.POSTRequestTests.postCartInfoTest.logResponse()'><b>logResponse</b><br>Test class: com.FakeStore.API.POSTRequestTests.postCartInfoTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.POSTRequestTests.postCartInfoTest@461ad730</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getAllProductsTest.logResponseBody()'><b>logResponseBody</b><br>Test class: com.FakeStore.API.GetRequestTests.getAllProductsTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getAllProductsTest@730d2164</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getAllCartsTest.validateResponseHeader()'><b>validateResponseHeader</b><br>Test class: com.FakeStore.API.GetRequestTests.getAllCartsTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getProductsByIdTest.logResponse()'><b>logResponse</b><br>Test class: com.FakeStore.API.GetRequestTests.getProductsByIdTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getProductsByIdTest@10289886</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getAllCartsTest.validateCartCount()'><b>validateCartCount</b><br>Test class: com.FakeStore.API.GetRequestTests.getAllCartsTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getAllCartsTest@7098b907</td></tr>
+<tr>
+<td title='com.FakeStore.API.GetRequestTests.getAllProductsTest.assertResponseTime()'><b>assertResponseTime</b><br>Test class: com.FakeStore.API.GetRequestTests.getAllProductsTest</td>
+<td></td>
+<td>0</td>
+<td>com.FakeStore.API.GetRequestTests.getAllProductsTest@730d2164</td></tr>
+</table><p>
+</body>
+</html>
