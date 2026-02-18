@@ -2,7 +2,7 @@ package com.FakeStore.API.GetRequestTests;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -49,5 +49,17 @@ public class getAllProductsTest extends BaseTest{
 	@Test(priority = 4)
 	public void assertResponseTime() {
 		Assert.assertTrue(res.getTime() < 3000, "Response is not within accepted time limit");
+	}
+	
+	@Test(priority = 5)
+	public void validateResponseParam() {
+		JsonPath json = res.jsonPath();
+		List<Object> data = json.getList("$");
+		Assert.assertTrue(data.size() > 0, "No data is captured");
+	}
+	
+	@Test(priority = 6)
+	public void validateResponseSchema() {
+		res.then().assertThat().body(matchesJsonSchemaInClasspath("SchemaValidation/productsSchema.json"));
 	}
 }
