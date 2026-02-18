@@ -1,0 +1,8 @@
+{
+	"id" : 0,
+	"title" : "Test Product title",
+	"price" : 9.56,
+	"description" : "Test description",
+	"category" : "Test category",
+	"image" : "https://www.google.com"
+}

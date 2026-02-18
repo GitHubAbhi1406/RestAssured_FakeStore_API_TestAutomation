@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-18T18:47:39 IST" name="Default suite" finished-at="2026-02-18T18:47:41 IST" duration-ms="1837">
+    <groups>
+    </groups>
+    <test started-at="2026-02-18T18:47:39 IST" name="Default test" finished-at="2026-02-18T18:47:41 IST" duration-ms="1837">
+      <class name="com.FakeStore.API.POSTRequestTests.postProductTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.FakeStore.API.POSTRequestTests.postProductTest@4218d6a3]" started-at="2026-02-18T18:47:39 IST" name="setUp" finished-at="2026-02-18T18:47:39 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="postRequestFunction()[pri:0, instance:com.FakeStore.API.POSTRequestTests.postProductTest@4218d6a3]" started-at="2026-02-18T18:47:39 IST" name="postRequestFunction" finished-at="2026-02-18T18:47:41 IST" duration-ms="1445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRequestFunction -->
+        <test-method signature="logResponseBody()[pri:1, instance:com.FakeStore.API.POSTRequestTests.postProductTest@4218d6a3]" started-at="2026-02-18T18:47:41 IST" name="logResponseBody" finished-at="2026-02-18T18:47:41 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logResponseBody -->
+        <test-method signature="assertResponseCode()[pri:2, instance:com.FakeStore.API.POSTRequestTests.postProductTest@4218d6a3]" started-at="2026-02-18T18:47:41 IST" name="assertResponseCode" finished-at="2026-02-18T18:47:41 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertResponseCode -->
+      </class> <!-- com.FakeStore.API.POSTRequestTests.postProductTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
