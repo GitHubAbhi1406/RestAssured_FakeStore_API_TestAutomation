@@ -6,6 +6,8 @@ import org.testng.annotations.Test;
 import com.FakeStore.API.BaseFile.BaseTest;
 import com.FakeStore.API.GetRequestApiUtils.getRequestApiUtils;
 import com.FakeStore.API.Routes.Endpoints;
+
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class getProductsByIdTest extends BaseTest{
@@ -28,4 +30,11 @@ public class getProductsByIdTest extends BaseTest{
 		Assert.assertEquals(res.getStatusCode(), 200);
 	}
 	
+	@Test(priority = 3)
+	public void assertResponseData() {
+		JsonPath json = res.jsonPath();
+		
+		Assert.assertEquals(json.getString("category"), "men's clothing", "Wrong Data");
+
+	}
 }

@@ -10,6 +10,7 @@ public class postRequestApiUtils{
 		
 		return given().
 				log().all().
+				contentType("application/json").
 					when().
 					body(requestbody).
 						post(endpoint);

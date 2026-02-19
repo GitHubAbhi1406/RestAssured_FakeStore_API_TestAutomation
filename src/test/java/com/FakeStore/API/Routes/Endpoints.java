@@ -9,4 +9,5 @@ public class Endpoints{
 	public static final String single_cart = "/carts/{id}";
 	public static final String post_cart = "/carts";
 	public static final String all_users = "/users";
+	public static final String authentication = "/auth/login";
 }

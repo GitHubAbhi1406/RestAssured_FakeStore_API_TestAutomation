@@ -1,45 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-18T23:25:59 IST" name="Default suite" finished-at="2026-02-18T23:26:02 IST" duration-ms="2681">
+  <suite started-at="2026-02-19T22:21:14 IST" name="Default suite" finished-at="2026-02-19T22:21:17 IST" duration-ms="2356">
     <groups>
     </groups>
-    <test started-at="2026-02-18T23:25:59 IST" name="Default test" finished-at="2026-02-18T23:26:02 IST" duration-ms="2681">
-      <class name="com.FakeStore.API.GetRequestTests.getAllProductsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@65fb9ffc]" started-at="2026-02-18T23:25:59 IST" name="setUp" finished-at="2026-02-18T23:25:59 IST" duration-ms="275" status="PASS">
+    <test started-at="2026-02-19T22:21:14 IST" name="Default test" finished-at="2026-02-19T22:21:17 IST" duration-ms="2356">
+      <class name="com.FakeStore.API.POSTRequestTests.checkAuthenticationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.FakeStore.API.POSTRequestTests.checkAuthenticationTest@73a1e9a9]" started-at="2026-02-19T22:21:14 IST" name="setUp" finished-at="2026-02-19T22:21:15 IST" duration-ms="284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="getProductsResponse()[pri:0, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@65fb9ffc]" started-at="2026-02-18T23:25:59 IST" name="getProductsResponse" finished-at="2026-02-18T23:26:01 IST" duration-ms="1354" status="PASS">
+        <test-method is-config="true" signature="logResponse()[pri:0, instance:com.FakeStore.API.POSTRequestTests.checkAuthenticationTest@73a1e9a9]" started-at="2026-02-19T22:21:15 IST" name="logResponse" finished-at="2026-02-19T22:21:16 IST" duration-ms="1548" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getProductsResponse -->
-        <test-method signature="logResponseBody()[pri:1, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@65fb9ffc]" started-at="2026-02-18T23:26:01 IST" name="logResponseBody" finished-at="2026-02-18T23:26:01 IST" duration-ms="70" status="PASS">
+        </test-method> <!-- logResponse -->
+        <test-method signature="logResponseBody()[pri:1, instance:com.FakeStore.API.POSTRequestTests.checkAuthenticationTest@73a1e9a9]" started-at="2026-02-19T22:21:16 IST" name="logResponseBody" finished-at="2026-02-19T22:21:16 IST" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResponseBody -->
-        <test-method signature="verifyStatusCode()[pri:2, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@65fb9ffc]" started-at="2026-02-18T23:26:01 IST" name="verifyStatusCode" finished-at="2026-02-18T23:26:01 IST" duration-ms="5" status="PASS">
+        <test-method signature="assertResponseCode()[pri:2, instance:com.FakeStore.API.POSTRequestTests.checkAuthenticationTest@73a1e9a9]" started-at="2026-02-19T22:21:16 IST" name="assertResponseCode" finished-at="2026-02-19T22:21:16 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [201]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [201]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at org.testng.Assert.assertEquals(Assert.java:1429)
+at com.FakeStore.API.POSTRequestTests.checkAuthenticationTest.assertResponseCode(checkAuthenticationTest.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyStatusCode -->
-        <test-method signature="extractResponseData()[pri:3, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@65fb9ffc]" started-at="2026-02-18T23:26:01 IST" name="extractResponseData" finished-at="2026-02-18T23:26:01 IST" duration-ms="534" status="PASS">
+        </test-method> <!-- assertResponseCode -->
+        <test-method signature="checkResponseHeaders()[pri:3, instance:com.FakeStore.API.POSTRequestTests.checkAuthenticationTest@73a1e9a9]" started-at="2026-02-19T22:21:16 IST" name="checkResponseHeaders" finished-at="2026-02-19T22:21:16 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- extractResponseData -->
-        <test-method signature="assertResponseTime()[pri:4, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@65fb9ffc]" started-at="2026-02-18T23:26:01 IST" name="assertResponseTime" finished-at="2026-02-18T23:26:01 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- checkResponseHeaders -->
+        <test-method signature="validateResponsebody()[pri:4, instance:com.FakeStore.API.POSTRequestTests.checkAuthenticationTest@73a1e9a9]" started-at="2026-02-19T22:21:16 IST" name="validateResponsebody" finished-at="2026-02-19T22:21:17 IST" duration-ms="426" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- assertResponseTime -->
-        <test-method signature="validateResponseParam()[pri:5, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@65fb9ffc]" started-at="2026-02-18T23:26:01 IST" name="validateResponseParam" finished-at="2026-02-18T23:26:01 IST" duration-ms="17" status="PASS">
+        </test-method> <!-- validateResponsebody -->
+        <test-method signature="validateResponseTime()[pri:5, instance:com.FakeStore.API.POSTRequestTests.checkAuthenticationTest@73a1e9a9]" started-at="2026-02-19T22:21:17 IST" name="validateResponseTime" finished-at="2026-02-19T22:21:17 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateResponseParam -->
-        <test-method signature="validateResponseSchema()[pri:6, instance:com.FakeStore.API.GetRequestTests.getAllProductsTest@65fb9ffc]" started-at="2026-02-18T23:26:01 IST" name="validateResponseSchema" finished-at="2026-02-18T23:26:02 IST" duration-ms="377" status="PASS">
+        </test-method> <!-- validateResponseTime -->
+        <test-method signature="validateSchema()[pri:6, instance:com.FakeStore.API.POSTRequestTests.checkAuthenticationTest@73a1e9a9]" started-at="2026-02-19T22:21:17 IST" name="validateSchema" finished-at="2026-02-19T22:21:17 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateResponseSchema -->
-      </class> <!-- com.FakeStore.API.GetRequestTests.getAllProductsTest -->
+        </test-method> <!-- validateSchema -->
+      </class> <!-- com.FakeStore.API.POSTRequestTests.checkAuthenticationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

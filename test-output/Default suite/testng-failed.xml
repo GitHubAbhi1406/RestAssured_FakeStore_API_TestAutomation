@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.FakeStore.API.GetRequestTests.getAllProductsTest">
+      <class name="com.FakeStore.API.POSTRequestTests.checkAuthenticationTest">
         <methods>
-          <include name="validateResponseSchema"/>
+          <include name="assertResponseCode"/>
           <include name="setUp"/>
-          <include name="getProductsResponse"/>
+          <include name="logResponse"/>
         </methods>
-      </class> <!-- com.FakeStore.API.GetRequestTests.getAllProductsTest -->
+      </class> <!-- com.FakeStore.API.POSTRequestTests.checkAuthenticationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
