@@ -1,7 +1,6 @@
 package com.FakeStore.API.GetRequestTests;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.FakeStore.API.BaseFile.BaseTest;
 import com.FakeStore.API.GetRequestApiUtils.getRequestApiUtils;
@@ -12,9 +11,11 @@ public class getSingleCartTest extends BaseTest{
 	
 	Response res;
 	
-	@BeforeClass
-	public void getResponseforCart() {
-		res = getRequestApiUtils.getResponseById(Endpoints.single_cart, 5);
+	@Test(dataProvider = "evenCartIds",
+			dataProviderClass = getAllCartsTest.class,
+			groups = {"smoke"})
+	public void getResponseforCart(int id){
+		res = getRequestApiUtils.getResponseById(Endpoints.single_cart, id);
 	}
 	
 	@Test(priority = 1)
@@ -23,7 +24,7 @@ public class getSingleCartTest extends BaseTest{
 		res.then().log().all();
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 2, groups = {"smoke"})
 	public void assertResponseCode() {
 		Assert.assertEquals(res.getStatusCode(), 200);
 	}

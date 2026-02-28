@@ -25,7 +25,7 @@ public class getProductsByIdTest extends BaseTest{
 		res.then().log().all();
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 2, groups = {"smoke"})
 	public void assertResponseCode(){
 		Assert.assertEquals(res.getStatusCode(), 200);
 	}

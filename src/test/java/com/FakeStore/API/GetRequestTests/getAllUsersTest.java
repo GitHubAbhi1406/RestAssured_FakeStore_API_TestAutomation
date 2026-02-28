@@ -29,17 +29,17 @@ public class getAllUsersTest extends BaseTest{
 		res.then().log().all();
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 2, groups = {"smoke"})
 	public void assertResponseCode() {
 		Assert.assertEquals(res.getStatusCode(), 200);
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3, groups = {"smoke"})
 	public void assertHeaders() {
 		Assert.assertEquals(res.getHeader("Content-Type"), "application/json; charset=utf-8");
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 4, groups = {"smoke"})
 	public void validateResponseTime() {
 		Assert.assertTrue(res.getTime() < 3000, "response time is not within expected time limit");;
 	}

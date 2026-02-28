@@ -27,7 +27,7 @@ public class getAllProductsTest extends BaseTest{
 		res.then().log().all();
 	}
 	 
-	@Test(priority = 2)
+	@Test(priority = 2, groups = {"smoke"})
 	public void verifyStatusCode() {
 		Assert.assertEquals(res.getStatusCode(), 200);
 	}
@@ -44,6 +44,11 @@ public class getAllProductsTest extends BaseTest{
 		for(int i=0;i<products_title.size();i++) {
 			System.out.println(products_title.get(i));
 		}
+		
+		List<String> categories = new ArrayList<>();
+		categories = json.getList("category.unique()");
+		
+		System.out.println(categories);
 	}
 	
 	@Test(priority = 4)
@@ -58,7 +63,7 @@ public class getAllProductsTest extends BaseTest{
 		Assert.assertTrue(data.size() > 0, "No data is captured");
 	}
 	
-	@Test(priority = 6)
+	@Test(priority = 6, groups = {"smoke"})
 	public void validateResponseSchema() {
 		res.then().assertThat().body(matchesJsonSchemaInClasspath("SchemaValidation/productsSchema.json"));
 	}
