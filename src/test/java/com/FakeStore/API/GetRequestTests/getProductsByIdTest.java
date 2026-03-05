@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.FakeStore.API.BaseFile.BaseTest;
 import com.FakeStore.API.GetRequestApiUtils.getRequestApiUtils;
 import com.FakeStore.API.Routes.Endpoints;
-
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
@@ -35,6 +35,10 @@ public class getProductsByIdTest extends BaseTest{
 		JsonPath json = res.jsonPath();
 		
 		Assert.assertEquals(json.getString("category"), "men's clothing", "Wrong Data");
-
+	}
+	
+	@Test(priority = 4)
+	public void validateSchema() {
+		res.then().assertThat().body(matchesJsonSchemaInClasspath("SchemaValidation/singleProductSchema.json"));
 	}
 }

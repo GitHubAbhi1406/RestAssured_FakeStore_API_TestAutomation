@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.FakeStore.API.GetRequestTests.getSingleCartTest">
+      <class name="com.FakeStore.API.GetRequestTests.getProductsByIdTest">
         <methods>
-          <include name="assertResponseCode"/>
+          <include name="getResponse"/>
+          <include name="validateSchema"/>
           <include name="setUp"/>
-          <include name="logResponseBody"/>
-          <include name="getResponseforCart"/>
         </methods>
-      </class> <!-- com.FakeStore.API.GetRequestTests.getSingleCartTest -->
+      </class> <!-- com.FakeStore.API.GetRequestTests.getProductsByIdTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
