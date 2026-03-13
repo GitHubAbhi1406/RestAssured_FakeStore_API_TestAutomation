@@ -2,7 +2,7 @@
 <suite name = "PUT API Tests">
 	<test name = "PUT Product Test">
 		<classes>
-			<class name = "com.FakeStore.API.PutRequestTests.putProductTest.java"/>
+			<class name = "com.FakeStore.API.PutRequestTests.putProductTest"/>
 		</classes>
 	</test>
 </suite>
