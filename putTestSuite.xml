@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name = "PUT API Tests">
+	<test name = "PUT Product Test">
+		<classes>
+			<class name = "com.FakeStore.API.PutRequestTests.putProductTest.java"/>
+		</classes>
+	</test>
+</suite>
