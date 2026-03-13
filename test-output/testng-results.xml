@@ -1,33 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-05T22:30:20 IST" name="Default suite" finished-at="2026-03-05T22:30:22 IST" duration-ms="2339">
+  <suite started-at="2026-03-13T21:52:45 IST" name="Default suite" finished-at="2026-03-13T21:52:47 IST" duration-ms="1620">
     <groups>
     </groups>
-    <test started-at="2026-03-05T22:30:20 IST" name="Default test" finished-at="2026-03-05T22:30:22 IST" duration-ms="2339">
-      <class name="com.FakeStore.API.GetRequestTests.getSingleProductTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.FakeStore.API.GetRequestTests.getSingleProductTest@7b2bbc3]" started-at="2026-03-05T22:30:19 IST" name="setUp" finished-at="2026-03-05T22:30:20 IST" duration-ms="272" status="PASS">
+    <test started-at="2026-03-13T21:52:45 IST" name="Default test" finished-at="2026-03-13T21:52:47 IST" duration-ms="1620">
+      <class name="com.FakeStore.API.PutRequestTests.putProductTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.FakeStore.API.PutRequestTests.putProductTest@7c7b252e]" started-at="2026-03-13T21:52:45 IST" name="setUp" finished-at="2026-03-13T21:52:45 IST" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="getResponse()[pri:0, instance:com.FakeStore.API.GetRequestTests.getSingleProductTest@7b2bbc3]" started-at="2026-03-05T22:30:20 IST" name="getResponse" finished-at="2026-03-05T22:30:22 IST" duration-ms="1830" status="PASS">
+        <test-method is-config="true" signature="getPutRequest()[pri:0, instance:com.FakeStore.API.PutRequestTests.putProductTest@7c7b252e]" started-at="2026-03-13T21:52:45 IST" name="getPutRequest" finished-at="2026-03-13T21:52:46 IST" duration-ms="1523" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getResponse -->
-        <test-method signature="logResponse()[pri:1, instance:com.FakeStore.API.GetRequestTests.getSingleProductTest@7b2bbc3]" started-at="2026-03-05T22:30:22 IST" name="logResponse" finished-at="2026-03-05T22:30:22 IST" duration-ms="52" status="PASS">
+        </test-method> <!-- getPutRequest -->
+        <test-method signature="logResponse()[pri:1, instance:com.FakeStore.API.PutRequestTests.putProductTest@7c7b252e]" started-at="2026-03-13T21:52:46 IST" name="logResponse" finished-at="2026-03-13T21:52:47 IST" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logResponse -->
-        <test-method signature="validateResponseCode()[pri:2, instance:com.FakeStore.API.GetRequestTests.getSingleProductTest@7b2bbc3]" started-at="2026-03-05T22:30:22 IST" name="validateResponseCode" finished-at="2026-03-05T22:30:22 IST" duration-ms="5" status="PASS">
+        <test-method signature="validateResponseCode()[pri:2, instance:com.FakeStore.API.PutRequestTests.putProductTest@7c7b252e]" started-at="2026-03-13T21:52:47 IST" name="validateResponseCode" finished-at="2026-03-13T21:52:47 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateResponseCode -->
-        <test-method signature="validateJsonSchema()[pri:3, instance:com.FakeStore.API.GetRequestTests.getSingleProductTest@7b2bbc3]" started-at="2026-03-05T22:30:22 IST" name="validateJsonSchema" finished-at="2026-03-05T22:30:22 IST" duration-ms="424" status="PASS">
+        <test-method signature="validateResponseTime()[pri:3, instance:com.FakeStore.API.PutRequestTests.putProductTest@7c7b252e]" started-at="2026-03-13T21:52:47 IST" name="validateResponseTime" finished-at="2026-03-13T21:52:47 IST" duration-ms="7" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Response time is not within acceptable limits] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Response time is not within acceptable limits] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:644)
+at com.FakeStore.API.PutRequestTests.putProductTest.validateResponseTime(putProductTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateJsonSchema -->
-      </class> <!-- com.FakeStore.API.GetRequestTests.getSingleProductTest -->
+        </test-method> <!-- validateResponseTime -->
+      </class> <!-- com.FakeStore.API.PutRequestTests.putProductTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

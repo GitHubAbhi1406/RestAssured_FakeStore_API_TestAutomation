@@ -1,7 +1,6 @@
 package com.FakeStore.API.GetRequestTests;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.FakeStore.API.BaseFile.BaseTest;
 import com.FakeStore.API.GetRequestApiUtils.getRequestApiUtils;
@@ -13,25 +12,31 @@ public class getSingleProductTest extends BaseTest{
 	
 	Response res;
 	
-	@BeforeClass
-	public void getResponse() {
+	@Test(dataProvider = "oddIds",
+			dataProviderClass = getAllProductsTest.class)
+	public void getResponse(int id) {
 		
-		res = getRequestApiUtils.getResponseById(Endpoints.single_product, 5);
+		res = getRequestApiUtils.getResponseById(Endpoints.single_product, id);
 	}
 	
-	@Test(priority = 1)
+	@Test
 	public void logResponse() {
 		res.then().log().all();
 		}
 	
-	@Test(priority = 2)
+	@Test
 	public void validateResponseCode() {
 		Assert.assertTrue(res.getStatusCode() == 200, "Response COde does not match");
 	}
 	
-	@Test(priority = 3)
+	@Test
 	public void validateJsonSchema() {
 		res.then().assertThat().body(matchesJsonSchemaInClasspath("SchemaValidation/singleProductSchema.json"));
-	
 	}
+	
+	@Test
+	public void validateResponseTime() {
+		Assert.assertTrue(res.getTime()<3000, "Response is not within acceptable limits");
+	}
+	
 }

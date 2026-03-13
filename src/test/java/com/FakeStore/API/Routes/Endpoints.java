@@ -10,4 +10,5 @@ public class Endpoints{
 	public static final String post_cart = "/carts";
 	public static final String all_users = "/users";
 	public static final String authentication = "/auth/login";
+	public static final String put_product = "/products/{id}";
 }

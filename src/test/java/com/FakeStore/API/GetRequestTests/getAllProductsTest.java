@@ -5,6 +5,7 @@ import java.util.List;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.FakeStore.API.BaseFile.BaseTest;
 import com.FakeStore.API.GetRequestApiUtils.getRequestApiUtils;
@@ -66,5 +67,14 @@ public class getAllProductsTest extends BaseTest{
 	@Test(priority = 6, groups = {"smoke"})
 	public void validateResponseSchema() {
 		res.then().assertThat().body(matchesJsonSchemaInClasspath("SchemaValidation/productsSchema.json"));
+	}
+	
+	@DataProvider(name = "oddIds")
+	public Object[] getAllOddProductIds() {
+		
+		Response res2 = getRequestApiUtils.getResponseByGET(Endpoints.products);
+		List<Integer> ids = res2.jsonPath().getList("findAll {it.id % 2 != 0}.id");
+		
+		return ids.toArray();
 	}
 }
